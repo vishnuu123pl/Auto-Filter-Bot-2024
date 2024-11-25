@@ -74,12 +74,17 @@ async def start(client:Client, message):
         await client.send_message(LOG_CHANNEL, script.NEW_USER_TXT.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=start')
+            InlineKeyboardButton('⇆ JOIN SERIAL SERIAL CHANNEL ⇆', url=f'https://t.me/MalluTVserials')
         ],[
-            InlineKeyboardButton('⚙ ꜰᴇᴀᴛᴜʀᴇs', callback_data='features'),
-            InlineKeyboardButton('💸 ᴘʀᴇᴍɪᴜᴍ', callback_data='buy_premium')
+            InlineKeyboardButton('⚙ ASIANET BOT 1', url=f'telegram.me/MalluSerial6_Bot'),
+            InlineKeyboardButton('⚙ ASIANET BOT 2', url=f'telegram.me/SERIALmallu_bot')
+		],[
+            InlineKeyboardButton('⚙ SURYA TV BOT 1', url=f'telegram.me/MalluSerial2024_Bot'),
+            InlineKeyboardButton('⚙ MANORAMA BOT 1', url=f'telegram.me/MalluSerial2024_Bot')
         ],[
-            InlineKeyboardButton('🚫 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 🚫', callback_data='earn')
+            InlineKeyboardButton('⚙ ZEE-KERALAM BOT 1', url=f'telegram.me/MalluSerial2024_Bot')
+        ],[
+            InlineKeyboardButton('🚫 MALLU TV SERIALS 🚫', url=f'https://t.me/AsianetSerialGroupVH')
         ]]   
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
@@ -102,12 +107,17 @@ async def start(client:Client, message):
             )
             return
         buttons = [[
-            InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
+            InlineKeyboardButton('⇆ JOIN SERIAL SERIAL CHANNEL ⇆', url=f'https://t.me/MalluTVserials')
         ],[
-            InlineKeyboardButton('⚙ ꜰᴇᴀᴛᴜʀᴇs', callback_data='features'),
-            InlineKeyboardButton('💸 ᴘʀᴇᴍɪᴜᴍ', callback_data='buy_premium')
+            InlineKeyboardButton('⚙ ASIANET BOT 1', url=f'telegram.me/MalluSerial6_Bot'),
+            InlineKeyboardButton('⚙ ASIANET BOT 2', url=f'telegram.me/SERIALmallu_bot')
+		],[
+            InlineKeyboardButton('⚙ SURYA TV BOT 1', url=f'telegram.me/MalluSerial2024_Bot'),
+            InlineKeyboardButton('⚙ MANORAMA BOT 1', url=f'telegram.me/MalluSerial2024_Bot')
         ],[
-            InlineKeyboardButton('🚫 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 🚫', callback_data='earn')
+            InlineKeyboardButton('⚙ ZEE-KERALAM BOT 1', url=f'telegram.me/MalluSerial2024_Bot')
+        ],[
+            InlineKeyboardButton('🚫 MALLU TV SERIALS 🚫', url=f'https://t.me/AsianetSerialGroupVH')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
