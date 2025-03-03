@@ -186,7 +186,13 @@ async def start(client:Client, message):
             await d.delete()
             await m.delete()
             return
-            
+
+    if len(message.command) == 2 and message.command[1].startswith('getfile'):
+        searches = message.command[1].split("-", 1)[1] 
+        search = searches.replace('-',' ')
+        message.text = search 
+        await auto_filter(client, message) 
+        return
     if data.startswith("allfiles"):
         _, grp_id, key = data.split("_", 2)
         files = temp.FILES_ID.get(key)
