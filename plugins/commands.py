@@ -177,7 +177,9 @@ async def start(client:Client, message):
             buttons = [[
                 InlineKeyboardButton(text="✅️ ᴠᴇʀɪꜰʏ ✅️", url=verify),
                 InlineKeyboardButton(text="❗ ʜᴏᴡ ᴛᴏ ᴠᴇʀɪꜰʏ ❓", url=rahul)
-            ]]
+            ],[
+            InlineKeyboardButton("😁 ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ꜰɪʟᴇꜱ 😁", callback_data='buy_premium')
+	    ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             if await db.user_verified(user_id): 
                 msg = script.THIRDT_VERIFICATION_TEXT
